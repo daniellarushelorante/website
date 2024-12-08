@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Quest</title>
+    <link rel="icon" type="MusicQuest" href="mqlogo.jpg">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: url("matty.jpg");
+            background-size: cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: black;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+        }
+
+        .navbar nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar .search-icon {
+            font-size: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 180px;
+            margin-left: 675px;
+        }
+
+        .image-section img {
+            max-width: 500px;
+            height: auto;
+            filter: grayscale(100%);
+        }
+
+        .text-section {
+            background-color: #eaeaea;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .text-section h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .text-section p {
+            margin: 10px 0 20px;
+            font-size: 18px;
+        }
+        .text-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .text-section label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .text-section input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+        }
+        .text-section button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .text-section button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">💿</div>
+        <nav>
+            <a href="featuredmq.html">EXPLORE</a>
+            <a href="aboutusmq.html">ABOUT US</a>
+            <a href="contactusmq.html">CONTACT US</a>
+        </nav>
+        <div class="search-icon">  </div>
+    </div>
+    <div class="content">
+        <div class="image-section">
+        </div>
+        <div class="text-section">
+            <h1>MUSIC QUEST</h1>
+            <p>Enjoy listening to music according to what you feel</p>
+            <form>
+                <label for="display-name">Display Name:</label>
+                <input type="text" id="display-name" placeholder="Enter your name">
+                <a href="vibecheck.html" class="button">Start Listening</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEATURED ARTISTS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('wave.gif');           
+            text-align: center;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 20px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            color: #fff;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1380px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-item .nav-icon {
+            font-size: 20px;
+        }
+
+        .nav-item .nav-text {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-left: 0.5px;
+        }
+
+        .nav-item.search {
+            justify-content: flex-end;
+        }
+
+        /* Background Section for Featured Artists */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+            gap: 60px;
+            margin-top: 130px;
+            margin-bottom: 110px;
+            margin-right: 45px;
+            margin-left: 200px;
+            max-width: 1000px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .artist {
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .artist:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(14, 13, 13, 0.607);
+        }
+
+        .artist img {
+            margin-top: 20px;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #282727a0;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .artist img:hover {
+            transform: scale(1.1);
+            border-color: #604045;
+        }
+
+        .artist p {
+            margin-top: 15px;
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #ddd;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .artist p:hover {
+            color: #d0cfcd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .artist img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="nav-content">
+            <div class="nav-item">
+                <span class="nav-text">FEATURED ARTISTS</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="artist">
+            <img src="olivia.jpeg" alt="Olivia Rodrigo">
+            <p>Olivia Rodrigo</p>
+        </div>
+        <div class="artist">
+            <img src="paramore.jpeg" alt="Paramore">
+            <p>Paramore</p>
+        </div>
+        <div class="artist">
+            <img src="taylor.jpeg" alt="Taylor Swift">
+            <p>Taylor Swift</p>
+        </div>
+        <div class="artist">
+            <img src="niki.jpeg" alt="NIKI">
+            <p>NIKI</p>
+        </div>
+        <div class="artist">
+            <img src="theweekend.jpeg" alt="The Weeknd">
+            <p>The Weeknd</p>
+        </div>
+        <div class="artist">
+            <img src="daniel.jpeg" alt="Daniel Caesar">
+            <p>Daniel Caesar</p>
+        </div>
+    </div>
+</body>
+</html>
